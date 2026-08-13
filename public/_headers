@@ -1,0 +1,14 @@
+# Netlify / Cloudflare Pages style cache-control rules.
+# HTTP caching and gzip/brotli compression can only be configured on the
+# server, not from inside the HTML file — apply whichever of these two
+# files matches your host (this one for Netlify/Cloudflare Pages,
+# .htaccess for Apache), or translate the same rules to your CDN's config.
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate
