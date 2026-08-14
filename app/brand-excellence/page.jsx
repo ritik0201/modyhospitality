@@ -1,23 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ArrowRight, Check } from 'lucide-react';
 
-const StaffDevelopmentPage = () => {
+export const metadata = {
+  title: 'Marketing & Brand Strategy | Mody Hospitality Consultants',
+  description: 'Brand positioning, identity design, digital booking optimization, and guest experience design for premium hospitality properties.',
+};
+
+export default function BrandExcellencePage() {
   return (
     <div>
       {/* Section 1: Hero Section */}
       <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-16">
         <div className="animate-rise grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
-            <span className="eyebrow text-clay">STAFFING &amp; RECRUITMENT</span>
+            <span className="eyebrow text-clay">MARKETING &amp; BRANDING</span>
             <h1 className="mt-4 font-display text-3xl leading-tight sm:text-5xl lg:text-6xl">
-              Build a team your guests remember
+              Command the rate your property deserves
             </h1>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-lg">
-              HR and talent management for properties where service is the product — from sourcing to succession.
+              Brand strategy and excellence programmes that position your property as a destination, not an option.
             </p>
             <Link
-              to="/contact"
+              href="/contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-clay px-5 py-3 text-xs font-medium text-clay-foreground transition-opacity hover:opacity-90 sm:px-6 sm:text-sm"
             >
               Start a conversation <ArrowRight className="h-4 w-4" />
@@ -25,8 +30,8 @@ const StaffDevelopmentPage = () => {
           </div>
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/staff-hero.jpg"
-              alt="Hospitality team in discussion"
+              src="/images/branding-hero.jpg"
+              alt="Elegant hotel lobby detail"
               loading="lazy"
               decoding="async"
               width="1600"
@@ -43,16 +48,16 @@ const StaffDevelopmentPage = () => {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="text-xs leading-relaxed text-muted-foreground sm:text-base space-y-4">
               <p>
-                Great hospitality starts with great people. We partner with hoteliers, restaurateurs and resort operators to build teams that deliver consistent, memorable guest experiences — shift after shift, season after season.
+                Your brand is not just a logo — it is the entire experience a guest has from the moment they discover your property to long after they check out. We build brands that command premium rates and create loyal advocates.
               </p>
               <p>
-                From sourcing C-suite talent for luxury properties to training front-line service teams in boutique hotels, our approach combines deep industry knowledge with proven HR methodologies that reduce turnover and raise service standards.
+                Whether you are launching a new concept or repositioning an existing property, our brand practice combines strategic thinking with creative execution to deliver measurable commercial results.
               </p>
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/team-highfive.jpg"
-                alt="Team high-five in modern office"
+                src="/images/dining-setting.jpg"
+                alt="Luxury dining table setting"
                 loading="lazy"
                 decoding="async"
                 width="1200"
@@ -70,20 +75,20 @@ const StaffDevelopmentPage = () => {
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">What we deliver</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Talent Sourcing</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Targeted recruitment for leadership, front-of-house and culinary roles across domestic and international markets.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Positioning &amp; Identity</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Brand architecture, narrative development and visual identity aligned to your target guest persona.</p>
           </div>
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Onboarding Systems</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Structured 90-day programmes that shorten ramp-up time and protect service standards from day one.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Digital Presence</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Website design, OTA content strategy, social media management and reputation optimisation that convert lookers to bookers.</p>
           </div>
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Service Training</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Luxury service curricula, mystery-guest audits and continuous coaching cycles tailored to your property.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Guest Experience Design</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Signature moments mapped across the entire guest journey, from pre-arrival to post-stay follow-up.</p>
           </div>
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Retention &amp; Culture</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Compensation benchmarking, career pathing and culture programmes that reduce churn and build loyalty.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Campaigns &amp; Partnerships</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Seasonal campaigns, PR strategy and strategic collaborations that build demand at premium rate points.</p>
           </div>
         </div>
       </section>
@@ -94,8 +99,8 @@ const StaffDevelopmentPage = () => {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/wooden-conference.jpg"
-                alt="Team meeting in wooden conference room"
+                src="/images/branding-hero.jpg"
+                alt="Hotel lobby"
                 loading="lazy"
                 decoding="async"
                 width="1200"
@@ -110,27 +115,27 @@ const StaffDevelopmentPage = () => {
               <div className="mt-6 space-y-2.5 sm:space-y-3">
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Proprietary hospitality talent assessment framework</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Brand identity &amp; visual guideline development</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Multi-language training modules for diverse teams</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Website &amp; direct booking engine optimisation</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">360-degree performance review systems</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">OTA content &amp; channel management strategy</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Succession planning for key leadership roles</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Social media content calendar &amp; execution</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Seasonal staffing surge planning</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Guest feedback system design &amp; analysis</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Employee satisfaction &amp; engagement tracking</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">PR &amp; influencer partnership programmes</span>
                 </div>
               </div>
             </div>
@@ -145,19 +150,19 @@ const StaffDevelopmentPage = () => {
         <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">Reduced time-to-hire for critical roles</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">A distinctive, defensible brand position</span>
           </div>
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">Consistent service delivery across all shifts</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">Higher direct booking share</span>
           </div>
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">Lower attrition and rehiring costs</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">Stronger review scores and repeat stays</span>
           </div>
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">A leadership bench ready for expansion</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">Pricing power in a crowded market</span>
           </div>
         </div>
       </section>
@@ -172,7 +177,7 @@ const StaffDevelopmentPage = () => {
             Tell us about your property and we will come back with a candid read of what is possible.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-background px-6 py-2.5 text-xs font-medium text-foreground transition-opacity hover:opacity-90 sm:px-7 sm:py-3 sm:text-sm"
           >
             Book a consultation <ArrowRight className="h-4 w-4" />
@@ -181,6 +186,4 @@ const StaffDevelopmentPage = () => {
       </section>
     </div>
   );
-};
-
-export default StaffDevelopmentPage;
+}

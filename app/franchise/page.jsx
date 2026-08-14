@@ -1,23 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ArrowRight, Check } from 'lucide-react';
 
-const BrandExcellencePage = () => {
+export const metadata = {
+  title: 'Franchise Setup & Expansion Advisory | Mody Hospitality Consultants',
+  description: 'End-to-end franchise development: unit economics, SOP manuals, operator vetting, and multi-site quality assurance.',
+};
+
+export default function FranchisePage() {
   return (
     <div>
       {/* Section 1: Hero Section */}
       <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-16">
         <div className="animate-rise grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
-            <span className="eyebrow text-clay">MARKETING &amp; BRANDING</span>
+            <span className="eyebrow text-clay">FRANCHISE CONSULTATION</span>
             <h1 className="mt-4 font-display text-3xl leading-tight sm:text-5xl lg:text-6xl">
-              Command the rate your property deserves
+              Scale the concept, not the chaos
             </h1>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-lg">
-              Brand strategy and excellence programmes that position your property as a destination, not an option.
+              Franchise setup and expansion support that turns a successful property into a repeatable, protectable system.
             </p>
             <Link
-              to="/contact"
+              href="/contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-clay px-5 py-3 text-xs font-medium text-clay-foreground transition-opacity hover:opacity-90 sm:px-6 sm:text-sm"
             >
               Start a conversation <ArrowRight className="h-4 w-4" />
@@ -25,8 +30,8 @@ const BrandExcellencePage = () => {
           </div>
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/branding-hero.jpg"
-              alt="Elegant hotel lobby detail"
+              src="/images/franchise-hero.jpg"
+              alt="Warm ambient modern restaurant interior"
               loading="lazy"
               decoding="async"
               width="1600"
@@ -43,16 +48,16 @@ const BrandExcellencePage = () => {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="text-xs leading-relaxed text-muted-foreground sm:text-base space-y-4">
               <p>
-                Your brand is not just a logo — it is the entire experience a guest has from the moment they discover your property to long after they check out. We build brands that command premium rates and create loyal advocates.
+                Franchising is the fastest path to scale — but only if the blueprint is rock-solid. We help hospitality concepts build franchise systems that protect brand integrity while enabling rapid, profitable growth.
               </p>
               <p>
-                Whether you are launching a new concept or repositioning an existing property, our brand practice combines strategic thinking with creative execution to deliver measurable commercial results.
+                From documenting every SOP to training franchisees and monitoring compliance, our end-to-end franchise practice gives you the confidence to expand without compromising the guest experience that made you successful.
               </p>
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/dining-setting.jpg"
-                alt="Luxury dining table setting"
+                src="/images/banquet-table.jpg"
+                alt="Elegant banquet table setting in dining hall"
                 loading="lazy"
                 decoding="async"
                 width="1200"
@@ -70,20 +75,20 @@ const BrandExcellencePage = () => {
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">What we deliver</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Positioning &amp; Identity</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Brand architecture, narrative development and visual identity aligned to your target guest persona.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Franchise Model Design</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Unit economics, fee structures and territory planning built for sustainable royalty income.</p>
           </div>
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Digital Presence</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Website design, OTA content strategy, social media management and reputation optimisation that convert lookers to bookers.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Operations Manuals</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Documented SOPs, brand standards and training kits that every franchisee can execute consistently.</p>
           </div>
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Guest Experience Design</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Signature moments mapped across the entire guest journey, from pre-arrival to post-stay follow-up.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Franchisee Selection</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Screening frameworks and structured onboarding to attract partners who protect and enhance the brand.</p>
           </div>
           <div className="surface p-6 sm:p-9">
-            <h3 className="font-display text-lg font-semibold sm:text-xl">Campaigns &amp; Partnerships</h3>
-            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Seasonal campaigns, PR strategy and strategic collaborations that build demand at premium rate points.</p>
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Rollout Support</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Site selection, pre-opening critical paths and multi-unit performance monitoring systems.</p>
           </div>
         </div>
       </section>
@@ -94,8 +99,8 @@ const BrandExcellencePage = () => {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/branding-hero.jpg"
-                alt="Hotel lobby"
+                src="/images/franchise-hero.jpg"
+                alt="Restaurant interior"
                 loading="lazy"
                 decoding="async"
                 width="1200"
@@ -110,27 +115,27 @@ const BrandExcellencePage = () => {
               <div className="mt-6 space-y-2.5 sm:space-y-3">
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Brand identity &amp; visual guideline development</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Complete franchise disclosure document preparation</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Website &amp; direct booking engine optimisation</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Territory mapping &amp; market saturation analysis</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">OTA content &amp; channel management strategy</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Franchisee training academy &amp; certification</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Social media content calendar &amp; execution</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Mystery guest programme for quality assurance</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">Guest feedback system design &amp; analysis</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Centralised supply chain &amp; vendor management</span>
                 </div>
                 <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
                   <Check className="h-4 w-4 shrink-0 text-clay" />
-                  <span className="text-xs font-medium text-foreground sm:text-sm">PR &amp; influencer partnership programmes</span>
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Multi-unit performance benchmarking platform</span>
                 </div>
               </div>
             </div>
@@ -145,19 +150,19 @@ const BrandExcellencePage = () => {
         <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">A distinctive, defensible brand position</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">A franchise package ready to take to market</span>
           </div>
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">Higher direct booking share</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">Consistent guest experience across all units</span>
           </div>
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">Stronger review scores and repeat stays</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">Faster, lower-risk new openings</span>
           </div>
           <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
             <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-            <span className="text-xs font-medium text-foreground sm:text-sm">Pricing power in a crowded market</span>
+            <span className="text-xs font-medium text-foreground sm:text-sm">Compliance and quality visibility at scale</span>
           </div>
         </div>
       </section>
@@ -172,7 +177,7 @@ const BrandExcellencePage = () => {
             Tell us about your property and we will come back with a candid read of what is possible.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-background px-6 py-2.5 text-xs font-medium text-foreground transition-opacity hover:opacity-90 sm:px-7 sm:py-3 sm:text-sm"
           >
             Book a consultation <ArrowRight className="h-4 w-4" />
@@ -181,6 +186,4 @@ const BrandExcellencePage = () => {
       </section>
     </div>
   );
-};
-
-export default BrandExcellencePage;
+}

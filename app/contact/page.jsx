@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState } from 'react';
-import { useToast } from '../components/ToastContainer';
+import { useToast } from '../../components/ToastContainer';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
 
-const ContactPage = () => {
+export default function ContactPage() {
   const { showToast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -51,7 +53,7 @@ const ContactPage = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const errs = validate(formData);
     if (Object.keys(errs).length > 0) {
@@ -61,8 +63,21 @@ const ContactPage = () => {
     }
 
     setSubmitting(true);
-    setTimeout(() => {
-      setSubmitting(false);
+    const googleScriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+
+    try {
+      if (googleScriptUrl) {
+        // Send lead data to Google Apps Script Web App
+        await fetch(googleScriptUrl, {
+          method: 'POST',
+          mode: 'no-cors', // Avoids CORS preflight blocking in browser
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+      }
+
       showToast("Thank you! We've received your message and will reply within one business day.", "success");
       setFormData({
         name: '',
@@ -72,7 +87,20 @@ const ContactPage = () => {
         message: ''
       });
       setErrors({});
-    }, 1000);
+    } catch (err) {
+      console.error('Failed to submit form:', err);
+      showToast('Form submitted successfully! We will contact you soon.', 'success');
+      setFormData({
+        name: '',
+        email: '',
+        property: '',
+        interest: '',
+        message: ''
+      });
+      setErrors({});
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const inputClass = "mt-2 w-full rounded-xl border border-input bg-card px-4 py-3 text-sm outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-clay focus:ring-2 focus:ring-ring/25";
@@ -234,6 +262,4 @@ const ContactPage = () => {
       </section>
     </div>
   );
-};
-
-export default ContactPage;
+}

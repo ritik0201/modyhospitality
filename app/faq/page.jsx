@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ChevronDown, Quote, ArrowRight } from 'lucide-react';
 
-const FaqPage = () => {
+export default function FaqPage() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFaq = (index) => {
@@ -191,7 +193,7 @@ const FaqPage = () => {
             Reach out directly and our team will get back to you within one business day.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-background px-6 py-2.5 text-xs font-medium text-foreground transition-opacity hover:opacity-90 sm:px-7 sm:py-3 sm:text-sm"
           >
             Ask us directly <ArrowRight className="h-4 w-4" />
@@ -200,6 +202,4 @@ const FaqPage = () => {
       </section>
     </div>
   );
-};
-
-export default FaqPage;
+}

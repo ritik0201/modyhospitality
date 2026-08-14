@@ -1,8 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ArrowRight, Check } from 'lucide-react';
 
-const GrowthStrategyPage = () => {
+export const metadata = {
+  title: 'Business Consultation & RevPAR Strategy | Mody Hospitality Consultants',
+  description: 'Strategic growth, financial modelling, menu engineering, and operational advisory for luxury hotels, resorts, and restaurant groups.',
+};
+
+export default function GrowthStrategyPage() {
   return (
     <div>
       {/* Section 1: Hero Section */}
@@ -17,7 +22,7 @@ const GrowthStrategyPage = () => {
               Strategic growth and operational advisory for owners who measure success in occupancy, covers and margin.
             </p>
             <Link
-              to="/contact"
+              href="/contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-clay px-5 py-3 text-xs font-medium text-clay-foreground transition-opacity hover:opacity-90 sm:px-6 sm:text-sm"
             >
               Start a conversation <ArrowRight className="h-4 w-4" />
@@ -172,7 +177,7 @@ const GrowthStrategyPage = () => {
             Tell us about your property and we will come back with a candid read of what is possible.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-background px-6 py-2.5 text-xs font-medium text-foreground transition-opacity hover:opacity-90 sm:px-7 sm:py-3 sm:text-sm"
           >
             Book a consultation <ArrowRight className="h-4 w-4" />
@@ -181,6 +186,4 @@ const GrowthStrategyPage = () => {
       </section>
     </div>
   );
-};
-
-export default GrowthStrategyPage;
+}

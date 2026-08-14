@@ -1,8 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-const CaseStudiesPage = () => {
+export const metadata = {
+  title: 'Case Studies & Measurable Track Record | Mody Hospitality Consultants',
+  description: 'Explore proven resort turnarounds, fine dining launches, and 5-city franchise rollouts with real RevPAR and occupancy metrics.',
+};
+
+export default function CaseStudiesPage() {
   return (
     <div>
       {/* Hero Banner */}
@@ -157,7 +162,7 @@ const CaseStudiesPage = () => {
             We only take on engagements where we can define clear, measurable impact from day one.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-clay px-6 py-2.5 text-xs font-medium text-clay-foreground transition-opacity hover:opacity-90 sm:px-6 sm:py-3 sm:text-sm"
           >
             Discuss a potential engagement <ArrowRight className="h-4 w-4" />
@@ -166,6 +171,4 @@ const CaseStudiesPage = () => {
       </section>
     </div>
   );
-};
-
-export default CaseStudiesPage;
+}

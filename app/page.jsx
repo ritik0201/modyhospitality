@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import PartnersMarquee from './PartnersMarquee';
+import Link from 'next/link';
+import PartnersMarquee from '../components/PartnersMarquee';
 import { ArrowRight, ArrowUpRight, Quote } from 'lucide-react';
 
-const HomePage = () => {
+export default function HomePage() {
   return (
     <div>
       {/* 1. Hero Section */}
@@ -26,14 +26,14 @@ const HomePage = () => {
             
             <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-12">
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full bg-clay px-6 py-3 text-xs font-semibold text-clay-foreground transition-opacity hover:opacity-90 sm:text-sm"
               >
                 <span>Book a consult</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                to="/case-studies"
+                href="/case-studies"
                 className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card/40 px-6 py-3 text-xs font-semibold text-foreground transition-colors hover:bg-muted sm:text-sm"
               >
                 See our work
@@ -51,7 +51,7 @@ const HomePage = () => {
                 alt="Luxury resort pool deck and thatched lodge"
                 width="800"
                 height="600"
-                fetchpriority="high"
+                fetchPriority="high"
                 decoding="async"
                 className="h-48 w-full object-cover sm:h-60 lg:h-56"
               />
@@ -100,7 +100,7 @@ const HomePage = () => {
 
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           <Link
-            to="/staff-development"
+            href="/staff-development"
             className="group surface flex flex-col justify-between overflow-hidden p-0 transition-colors duration-200 hover:border-clay hover:shadow-lift lg:col-span-2"
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
@@ -128,7 +128,7 @@ const HomePage = () => {
           </Link>
 
           <Link
-            to="/growth-strategy"
+            href="/growth-strategy"
             className="group surface flex flex-col justify-between overflow-hidden p-0 transition-colors duration-200 hover:border-clay hover:shadow-lift"
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
@@ -156,7 +156,7 @@ const HomePage = () => {
           </Link>
 
           <Link
-            to="/franchise"
+            href="/franchise"
             className="group surface flex flex-col justify-between overflow-hidden p-0 transition-colors duration-200 hover:border-clay hover:shadow-lift"
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
@@ -184,7 +184,7 @@ const HomePage = () => {
           </Link>
 
           <Link
-            to="/brand-excellence"
+            href="/brand-excellence"
             className="group surface flex flex-col justify-between overflow-hidden p-0 transition-colors duration-200 hover:border-clay hover:shadow-lift lg:col-span-2"
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
@@ -254,7 +254,7 @@ const HomePage = () => {
                 </div>
 
                 <Link
-                  to="/case-studies"
+                  href="/case-studies"
                   className="mt-6 inline-flex items-center gap-1.5 text-xs font-medium text-clay hover:underline"
                 >
                   <span>Read full case study</span>
@@ -421,7 +421,7 @@ const HomePage = () => {
               <span className="eyebrow text-clay">PERSPECTIVES</span>
               <h2 className="mt-2 font-display text-2xl sm:text-4xl">Latest insights</h2>
             </div>
-            <Link to="/contact" className="inline-flex items-center gap-1.5 text-xs font-medium text-clay hover:underline">
+            <Link href="/contact" className="inline-flex items-center gap-1.5 text-xs font-medium text-clay hover:underline">
               <span>View all articles</span>
               <ArrowRight className="h-3.5 w-3.5" />
             </Link>
@@ -436,7 +436,7 @@ const HomePage = () => {
               </div>
               <div className="mt-5 flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
                 <span>6 min read</span>
-                <Link to="/contact" className="font-medium text-clay hover:underline">
+                <Link href="/contact" className="font-medium text-clay hover:underline">
                   Read article
                 </Link>
               </div>
@@ -450,7 +450,7 @@ const HomePage = () => {
               </div>
               <div className="mt-5 flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
                 <span>8 min read</span>
-                <Link to="/contact" className="font-medium text-clay hover:underline">
+                <Link href="/contact" className="font-medium text-clay hover:underline">
                   Read article
                 </Link>
               </div>
@@ -464,7 +464,7 @@ const HomePage = () => {
               </div>
               <div className="mt-5 flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
                 <span>5 min read</span>
-                <Link to="/contact" className="font-medium text-clay hover:underline">
+                <Link href="/contact" className="font-medium text-clay hover:underline">
                   Read article
                 </Link>
               </div>
@@ -487,13 +487,13 @@ const HomePage = () => {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3 sm:mt-8 sm:gap-4">
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-full bg-background px-6 py-2.5 text-xs font-medium text-foreground transition-opacity hover:opacity-90 sm:px-7 sm:py-3 sm:text-sm"
             >
               Book a consult <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              to="/case-studies"
+              href="/case-studies"
               className="inline-flex items-center gap-2 rounded-full border border-clay-foreground/30 px-6 py-2.5 text-xs font-medium text-clay-foreground transition-opacity hover:bg-clay-foreground/10 sm:px-7 sm:py-3 sm:text-sm"
             >
               View case studies
@@ -503,6 +503,4 @@ const HomePage = () => {
       </section>
     </div>
   );
-};
-
-export default HomePage;
+}

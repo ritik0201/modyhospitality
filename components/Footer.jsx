@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const services = [
   { to: "/staff-development", title: "Staffing & Recruitment" },
@@ -15,7 +15,7 @@ const Footer = () => {
         <div>
           <div className="flex min-w-0 items-center gap-2.5">
             <picture>
-              <source srcset="/images/logo.webp" type="image/webp" />
+              <source srcSet="/images/logo.webp" type="image/webp" />
               <img
                 className="h-8 w-auto shrink-0 object-contain"
                 src="/images/logo.png"
@@ -39,16 +39,16 @@ const Footer = () => {
           <h4 className="eyebrow text-clay">Explore</h4>
           <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
             <li>
-              <Link to="/" className="transition-colors hover:text-clay">Home</Link>
+              <Link href="/" className="transition-colors hover:text-clay">Home</Link>
             </li>
             <li>
-              <Link to="/case-studies" className="transition-colors hover:text-clay">Case Studies</Link>
+              <Link href="/case-studies" className="transition-colors hover:text-clay">Case Studies</Link>
             </li>
             <li>
-              <Link to="/faq" className="transition-colors hover:text-clay">Testimonials &amp; FAQ</Link>
+              <Link href="/faq" className="transition-colors hover:text-clay">Testimonials &amp; FAQ</Link>
             </li>
             <li>
-              <Link to="/contact" className="transition-colors hover:text-clay">Contact</Link>
+              <Link href="/contact" className="transition-colors hover:text-clay">Contact</Link>
             </li>
           </ul>
         </div>
@@ -58,7 +58,7 @@ const Footer = () => {
           <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
             {services.map((svc) => (
               <li key={svc.to}>
-                <Link to={svc.to} className="transition-colors hover:text-clay">
+                <Link href={svc.to} className="transition-colors hover:text-clay">
                   {svc.title}
                 </Link>
               </li>

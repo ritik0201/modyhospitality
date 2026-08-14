@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const partnerStats = [
   { value: "100+", title: "Properties advised", desc: "across luxury hotels & F&B" },
@@ -144,7 +146,7 @@ const PartnersMarquee = () => {
           {marqueeLogos.map((partner, i) => (
             <Link
               key={`${partner.src}-${i}`}
-              to="/contact"
+              href="/contact"
               className="partners-card"
               aria-label={partner.label}
             >

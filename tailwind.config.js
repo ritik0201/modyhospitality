@@ -1,43 +1,60 @@
-function withOpacity(variableName) {
-  return ({ opacityValue }) => {
-    if (opacityValue !== undefined) {
-      return `color-mix(in srgb, var(${variableName}) calc(${opacityValue} * 100%), transparent)`;
-    }
-    return `var(${variableName})`;
-  };
-}
-
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: 'class',
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        background: withOpacity('--background'),
-        foreground: withOpacity('--foreground'),
-        card: withOpacity('--card'),
-        'card-foreground': withOpacity('--card-foreground'),
-        muted: withOpacity('--muted'),
-        'muted-foreground': withOpacity('--muted-foreground'),
-        border: withOpacity('--border'),
-        input: withOpacity('--input'),
-        ring: withOpacity('--ring'),
-        clay: withOpacity('--clay'),
-        'clay-foreground': withOpacity('--clay-foreground'),
-        dune: withOpacity('--dune'),
-        linen: withOpacity('--linen'),
-        ink: withOpacity('--ink'),
-        destructive: withOpacity('--destructive')
+        border: 'var(--border)',
+        input: 'var(--input)',
+        ring: 'var(--ring)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        primary: {
+          DEFAULT: 'var(--primary)',
+          foreground: 'var(--primary-foreground)',
+        },
+        secondary: {
+          DEFAULT: 'var(--secondary)',
+          foreground: 'var(--secondary-foreground)',
+        },
+        destructive: {
+          DEFAULT: 'var(--destructive)',
+          foreground: 'var(--destructive-foreground)',
+        },
+        muted: {
+          DEFAULT: 'var(--muted)',
+          foreground: 'var(--muted-foreground)',
+        },
+        accent: {
+          DEFAULT: 'var(--accent)',
+          foreground: 'var(--accent-foreground)',
+        },
+        popover: {
+          DEFAULT: 'var(--popover)',
+          foreground: 'var(--popover-foreground)',
+        },
+        card: {
+          DEFAULT: 'var(--card)',
+          foreground: 'var(--card-foreground)',
+        },
+        clay: {
+          DEFAULT: 'var(--clay)',
+          foreground: 'var(--clay-foreground)',
+        },
+        dune: 'var(--dune)',
+        linen: 'var(--linen)',
+        ink: {
+          DEFAULT: 'var(--ink)',
+          foreground: 'var(--ink-foreground)',
+          muted: 'var(--ink-muted)',
+        },
       },
-      fontFamily: {
-        display: ["Outfit", "system-ui", "sans-serif"],
-        sans: ["Figtree", "system-ui", "sans-serif"]
-      }
     },
   },
   plugins: [],
-}
+};
