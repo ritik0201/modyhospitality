@@ -2,41 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
 
-const offerings = [
-  {
-    title: "Positioning & Identity",
-    body: "Brand architecture, narrative development and visual identity aligned to your target guest persona."
-  },
-  {
-    title: "Digital Presence",
-    body: "Website design, OTA content strategy, social media management and reputation optimisation that convert lookers to bookers."
-  },
-  {
-    title: "Guest Experience Design",
-    body: "Signature moments mapped across the entire guest journey, from pre-arrival to post-stay follow-up."
-  },
-  {
-    title: "Campaigns & Partnerships",
-    body: "Seasonal campaigns, PR strategy and strategic collaborations that build demand at premium rate points."
-  }
-];
-
-const features = [
-  "Brand identity & visual guideline development",
-  "Website & direct booking engine optimisation",
-  "OTA content & channel management strategy",
-  "Social media content calendar & execution",
-  "Guest feedback system design & analysis",
-  "PR & influencer partnership programmes"
-];
-
-const outcomes = [
-  "A distinctive, defensible brand position",
-  "Higher direct booking share",
-  "Stronger review scores and repeat stays",
-  "Pricing power in a crowded market"
-];
-
 const BrandExcellencePage = () => {
   return (
     <div>
@@ -104,12 +69,22 @@ const BrandExcellencePage = () => {
         <span className="eyebrow text-clay">OUR APPROACH</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">What we deliver</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {offerings.map((offering) => (
-            <div key={offering.title} className="surface p-6 sm:p-9">
-              <h3 className="font-display text-lg font-semibold sm:text-xl">{offering.title}</h3>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">{offering.body}</p>
-            </div>
-          ))}
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Positioning &amp; Identity</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Brand architecture, narrative development and visual identity aligned to your target guest persona.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Digital Presence</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Website design, OTA content strategy, social media management and reputation optimisation that convert lookers to bookers.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Guest Experience Design</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Signature moments mapped across the entire guest journey, from pre-arrival to post-stay follow-up.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Campaigns &amp; Partnerships</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Seasonal campaigns, PR strategy and strategic collaborations that build demand at premium rate points.</p>
+          </div>
         </div>
       </section>
 
@@ -133,12 +108,30 @@ const BrandExcellencePage = () => {
               <span className="eyebrow text-clay">KEY FEATURES</span>
               <h2 className="mt-2 font-display text-2xl sm:text-4xl">Everything you need</h2>
               <div className="mt-6 space-y-2.5 sm:space-y-3">
-                {features.map((feat, idx) => (
-                  <div key={idx} className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
-                    <Check className="h-4 w-4 shrink-0 text-clay" />
-                    <span className="text-xs font-medium text-foreground sm:text-sm">{feat}</span>
-                  </div>
-                ))}
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Brand identity &amp; visual guideline development</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Website &amp; direct booking engine optimisation</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">OTA content &amp; channel management strategy</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Social media content calendar &amp; execution</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Guest feedback system design &amp; analysis</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">PR &amp; influencer partnership programmes</span>
+                </div>
               </div>
             </div>
           </div>
@@ -150,12 +143,22 @@ const BrandExcellencePage = () => {
         <span className="eyebrow text-clay">GUARANTEED RESULTS</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">Outcomes you can expect</h2>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
-          {outcomes.map((outcome, idx) => (
-            <div key={idx} className="surface flex items-center gap-3.5 p-5 sm:p-6">
-              <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-              <span className="text-xs font-medium text-foreground sm:text-sm">{outcome}</span>
-            </div>
-          ))}
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">A distinctive, defensible brand position</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Higher direct booking share</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Stronger review scores and repeat stays</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Pricing power in a crowded market</span>
+          </div>
         </div>
       </section>
 

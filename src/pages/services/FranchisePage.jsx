@@ -2,41 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
 
-const offerings = [
-  {
-    title: "Franchise Model Design",
-    body: "Unit economics, fee structures and territory planning built for sustainable royalty income."
-  },
-  {
-    title: "Operations Manuals",
-    body: "Documented SOPs, brand standards and training kits that every franchisee can execute consistently."
-  },
-  {
-    title: "Franchisee Selection",
-    body: "Screening frameworks and structured onboarding to attract partners who protect and enhance the brand."
-  },
-  {
-    title: "Rollout Support",
-    body: "Site selection, pre-opening critical paths and multi-unit performance monitoring systems."
-  }
-];
-
-const features = [
-  "Complete franchise disclosure document preparation",
-  "Territory mapping & market saturation analysis",
-  "Franchisee training academy & certification",
-  "Mystery guest programme for quality assurance",
-  "Centralised supply chain & vendor management",
-  "Multi-unit performance benchmarking platform"
-];
-
-const outcomes = [
-  "A franchise package ready to take to market",
-  "Consistent guest experience across all units",
-  "Faster, lower-risk new openings",
-  "Compliance and quality visibility at scale"
-];
-
 const FranchisePage = () => {
   return (
     <div>
@@ -104,12 +69,22 @@ const FranchisePage = () => {
         <span className="eyebrow text-clay">OUR APPROACH</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">What we deliver</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {offerings.map((offering) => (
-            <div key={offering.title} className="surface p-6 sm:p-9">
-              <h3 className="font-display text-lg font-semibold sm:text-xl">{offering.title}</h3>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">{offering.body}</p>
-            </div>
-          ))}
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Franchise Model Design</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Unit economics, fee structures and territory planning built for sustainable royalty income.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Operations Manuals</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Documented SOPs, brand standards and training kits that every franchisee can execute consistently.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Franchisee Selection</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Screening frameworks and structured onboarding to attract partners who protect and enhance the brand.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Rollout Support</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Site selection, pre-opening critical paths and multi-unit performance monitoring systems.</p>
+          </div>
         </div>
       </section>
 
@@ -133,12 +108,30 @@ const FranchisePage = () => {
               <span className="eyebrow text-clay">KEY FEATURES</span>
               <h2 className="mt-2 font-display text-2xl sm:text-4xl">Everything you need</h2>
               <div className="mt-6 space-y-2.5 sm:space-y-3">
-                {features.map((feat, idx) => (
-                  <div key={idx} className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
-                    <Check className="h-4 w-4 shrink-0 text-clay" />
-                    <span className="text-xs font-medium text-foreground sm:text-sm">{feat}</span>
-                  </div>
-                ))}
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Complete franchise disclosure document preparation</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Territory mapping &amp; market saturation analysis</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Franchisee training academy &amp; certification</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Mystery guest programme for quality assurance</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Centralised supply chain &amp; vendor management</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Multi-unit performance benchmarking platform</span>
+                </div>
               </div>
             </div>
           </div>
@@ -150,12 +143,22 @@ const FranchisePage = () => {
         <span className="eyebrow text-clay">GUARANTEED RESULTS</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">Outcomes you can expect</h2>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
-          {outcomes.map((outcome, idx) => (
-            <div key={idx} className="surface flex items-center gap-3.5 p-5 sm:p-6">
-              <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-              <span className="text-xs font-medium text-foreground sm:text-sm">{outcome}</span>
-            </div>
-          ))}
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">A franchise package ready to take to market</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Consistent guest experience across all units</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Faster, lower-risk new openings</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Compliance and quality visibility at scale</span>
+          </div>
         </div>
       </section>
 

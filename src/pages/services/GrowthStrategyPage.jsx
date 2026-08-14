@@ -2,41 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
 
-const offerings = [
-  {
-    title: "Feasibility & Concept",
-    body: "Market studies, competitive analysis and concept validation before capital is committed."
-  },
-  {
-    title: "Revenue Management",
-    body: "Rate strategy, channel mix optimisation and menu engineering to lift RevPAR and average spend."
-  },
-  {
-    title: "Operational Audits",
-    body: "End-to-end reviews of SOPs, staffing ratios, procurement processes and guest journey mapping."
-  },
-  {
-    title: "Cost Optimisation",
-    body: "Supplier renegotiation, wastage control and energy efficiency programmes that protect margin."
-  }
-];
-
-const features = [
-  "Custom financial modelling & sensitivity analysis",
-  "Competitive benchmarking against market peers",
-  "Revenue management system selection & setup",
-  "Menu engineering & pricing optimisation",
-  "Procurement audit & vendor negotiation support",
-  "Monthly KPI dashboards & performance reviews"
-];
-
-const outcomes = [
-  "Clear, data-backed growth roadmap",
-  "Improved RevPAR and average cover value",
-  "Leaner cost base without service compromise",
-  "Reporting owners can actually act on"
-];
-
 const GrowthStrategyPage = () => {
   return (
     <div>
@@ -104,12 +69,22 @@ const GrowthStrategyPage = () => {
         <span className="eyebrow text-clay">OUR APPROACH</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">What we deliver</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {offerings.map((offering) => (
-            <div key={offering.title} className="surface p-6 sm:p-9">
-              <h3 className="font-display text-lg font-semibold sm:text-xl">{offering.title}</h3>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">{offering.body}</p>
-            </div>
-          ))}
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Feasibility &amp; Concept</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Market studies, competitive analysis and concept validation before capital is committed.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Revenue Management</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Rate strategy, channel mix optimisation and menu engineering to lift RevPAR and average spend.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Operational Audits</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">End-to-end reviews of SOPs, staffing ratios, procurement processes and guest journey mapping.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Cost Optimisation</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Supplier renegotiation, wastage control and energy efficiency programmes that protect margin.</p>
+          </div>
         </div>
       </section>
 
@@ -133,12 +108,30 @@ const GrowthStrategyPage = () => {
               <span className="eyebrow text-clay">KEY FEATURES</span>
               <h2 className="mt-2 font-display text-2xl sm:text-4xl">Everything you need</h2>
               <div className="mt-6 space-y-2.5 sm:space-y-3">
-                {features.map((feat, idx) => (
-                  <div key={idx} className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
-                    <Check className="h-4 w-4 shrink-0 text-clay" />
-                    <span className="text-xs font-medium text-foreground sm:text-sm">{feat}</span>
-                  </div>
-                ))}
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Custom financial modelling &amp; sensitivity analysis</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Competitive benchmarking against market peers</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Revenue management system selection &amp; setup</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Menu engineering &amp; pricing optimisation</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Procurement audit &amp; vendor negotiation support</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Monthly KPI dashboards &amp; performance reviews</span>
+                </div>
               </div>
             </div>
           </div>
@@ -150,12 +143,22 @@ const GrowthStrategyPage = () => {
         <span className="eyebrow text-clay">GUARANTEED RESULTS</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">Outcomes you can expect</h2>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
-          {outcomes.map((outcome, idx) => (
-            <div key={idx} className="surface flex items-center gap-3.5 p-5 sm:p-6">
-              <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-              <span className="text-xs font-medium text-foreground sm:text-sm">{outcome}</span>
-            </div>
-          ))}
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Clear, data-backed growth roadmap</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Improved RevPAR and average cover value</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Leaner cost base without service compromise</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Reporting owners can actually act on</span>
+          </div>
         </div>
       </section>
 

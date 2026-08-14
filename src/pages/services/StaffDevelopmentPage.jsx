@@ -2,41 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
 
-const offerings = [
-  {
-    title: "Talent Sourcing",
-    body: "Targeted recruitment for leadership, front-of-house and culinary roles across domestic and international markets."
-  },
-  {
-    title: "Onboarding Systems",
-    body: "Structured 90-day programmes that shorten ramp-up time and protect service standards from day one."
-  },
-  {
-    title: "Service Training",
-    body: "Luxury service curricula, mystery-guest audits and continuous coaching cycles tailored to your property."
-  },
-  {
-    title: "Retention & Culture",
-    body: "Compensation benchmarking, career pathing and culture programmes that reduce churn and build loyalty."
-  }
-];
-
-const features = [
-  "Proprietary hospitality talent assessment framework",
-  "Multi-language training modules for diverse teams",
-  "360-degree performance review systems",
-  "Succession planning for key leadership roles",
-  "Seasonal staffing surge planning",
-  "Employee satisfaction & engagement tracking"
-];
-
-const outcomes = [
-  "Reduced time-to-hire for critical roles",
-  "Consistent service delivery across all shifts",
-  "Lower attrition and rehiring costs",
-  "A leadership bench ready for expansion"
-];
-
 const StaffDevelopmentPage = () => {
   return (
     <div>
@@ -104,12 +69,22 @@ const StaffDevelopmentPage = () => {
         <span className="eyebrow text-clay">OUR APPROACH</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">What we deliver</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {offerings.map((offering) => (
-            <div key={offering.title} className="surface p-6 sm:p-9">
-              <h3 className="font-display text-lg font-semibold sm:text-xl">{offering.title}</h3>
-              <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">{offering.body}</p>
-            </div>
-          ))}
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Talent Sourcing</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Targeted recruitment for leadership, front-of-house and culinary roles across domestic and international markets.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Onboarding Systems</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Structured 90-day programmes that shorten ramp-up time and protect service standards from day one.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Service Training</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Luxury service curricula, mystery-guest audits and continuous coaching cycles tailored to your property.</p>
+          </div>
+          <div className="surface p-6 sm:p-9">
+            <h3 className="font-display text-lg font-semibold sm:text-xl">Retention &amp; Culture</h3>
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">Compensation benchmarking, career pathing and culture programmes that reduce churn and build loyalty.</p>
+          </div>
         </div>
       </section>
 
@@ -133,12 +108,30 @@ const StaffDevelopmentPage = () => {
               <span className="eyebrow text-clay">KEY FEATURES</span>
               <h2 className="mt-2 font-display text-2xl sm:text-4xl">Everything you need</h2>
               <div className="mt-6 space-y-2.5 sm:space-y-3">
-                {features.map((feat, idx) => (
-                  <div key={idx} className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
-                    <Check className="h-4 w-4 shrink-0 text-clay" />
-                    <span className="text-xs font-medium text-foreground sm:text-sm">{feat}</span>
-                  </div>
-                ))}
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Proprietary hospitality talent assessment framework</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Multi-language training modules for diverse teams</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">360-degree performance review systems</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Succession planning for key leadership roles</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Seasonal staffing surge planning</span>
+                </div>
+                <div className="surface flex items-center gap-3 px-4 py-3.5 sm:px-5 sm:py-4">
+                  <Check className="h-4 w-4 shrink-0 text-clay" />
+                  <span className="text-xs font-medium text-foreground sm:text-sm">Employee satisfaction &amp; engagement tracking</span>
+                </div>
               </div>
             </div>
           </div>
@@ -150,12 +143,22 @@ const StaffDevelopmentPage = () => {
         <span className="eyebrow text-clay">GUARANTEED RESULTS</span>
         <h2 className="mt-2 font-display text-2xl sm:text-4xl">Outcomes you can expect</h2>
         <div className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
-          {outcomes.map((outcome, idx) => (
-            <div key={idx} className="surface flex items-center gap-3.5 p-5 sm:p-6">
-              <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
-              <span className="text-xs font-medium text-foreground sm:text-sm">{outcome}</span>
-            </div>
-          ))}
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Reduced time-to-hire for critical roles</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Consistent service delivery across all shifts</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">Lower attrition and rehiring costs</span>
+          </div>
+          <div className="surface flex items-center gap-3.5 p-5 sm:p-6">
+            <Check className="h-4 w-4 shrink-0 text-clay sm:h-5 sm:w-5" />
+            <span className="text-xs font-medium text-foreground sm:text-sm">A leadership bench ready for expansion</span>
+          </div>
         </div>
       </section>
 
