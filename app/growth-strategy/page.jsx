@@ -30,7 +30,7 @@ export default function GrowthStrategyPage() {
           </div>
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/business-hero.jpg"
+              src="/images/business-hero.webp"
               alt="Minimalist modern office interior"
               loading="lazy"
               decoding="async"
@@ -56,7 +56,7 @@ export default function GrowthStrategyPage() {
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/loft-workspace.jpg"
+                src="/images/loft-workspace.webp"
                 alt="Business team collaborating in modern loft workspace"
                 loading="lazy"
                 decoding="async"
@@ -99,7 +99,7 @@ export default function GrowthStrategyPage() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/business-hero.jpg"
+                src="/images/business-hero.webp"
                 alt="Modern corporate office interior"
                 loading="lazy"
                 decoding="async"

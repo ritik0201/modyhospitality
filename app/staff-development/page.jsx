@@ -30,7 +30,7 @@ export default function StaffDevelopmentPage() {
           </div>
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/staff-hero.jpg"
+              src="/images/staff-hero.webp"
               alt="Hospitality team in discussion"
               loading="lazy"
               decoding="async"
@@ -56,7 +56,7 @@ export default function StaffDevelopmentPage() {
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/team-highfive.jpg"
+                src="/images/team-highfive.webp"
                 alt="Team high-five in modern office"
                 loading="lazy"
                 decoding="async"
@@ -99,7 +99,7 @@ export default function StaffDevelopmentPage() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/wooden-conference.jpg"
+                src="/images/wooden-conference.webp"
                 alt="Team meeting in wooden conference room"
                 loading="lazy"
                 decoding="async"

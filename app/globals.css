@@ -41,6 +41,15 @@
   }
 }
 
+/* Below-the-fold content visibility optimization for mobile performance */
+@media (max-width: 768px) {
+  section:nth-of-type(n+4) {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 400px;
+  }
+}
+
+
 /* Font Face Definitions */
 @font-face {
   font-family: 'Outfit';

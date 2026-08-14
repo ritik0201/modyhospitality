@@ -30,7 +30,7 @@ export default function BrandExcellencePage() {
           </div>
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/branding-hero.jpg"
+              src="/images/branding-hero.webp"
               alt="Elegant hotel lobby detail"
               loading="lazy"
               decoding="async"
@@ -56,7 +56,7 @@ export default function BrandExcellencePage() {
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/dining-setting.jpg"
+                src="/images/dining-setting.webp"
                 alt="Luxury dining table setting"
                 loading="lazy"
                 decoding="async"
@@ -99,7 +99,7 @@ export default function BrandExcellencePage() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/branding-hero.jpg"
+                src="/images/branding-hero.webp"
                 alt="Hotel lobby"
                 loading="lazy"
                 decoding="async"

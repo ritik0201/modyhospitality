@@ -17,6 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Preload Critical Web Fonts */}
+        <link rel="preload" href="/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/outfit-latin-600-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        
+        {/* Preload Mobile LCP Hero Image */}
+        <link rel="preload" href="/images/hero-poolside-mobile.webp" as="image" type="image/webp" media="(max-width: 639px)" fetchPriority="high" />
+        <link rel="preload" href="/images/hero-poolside.webp" as="image" type="image/webp" media="(min-width: 640px)" fetchPriority="high" />
+
         <script
           dangerouslySetInnerHTML={{
             __html: `

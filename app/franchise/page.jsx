@@ -30,7 +30,7 @@ export default function FranchisePage() {
           </div>
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/franchise-hero.jpg"
+              src="/images/franchise-hero.webp"
               alt="Warm ambient modern restaurant interior"
               loading="lazy"
               decoding="async"
@@ -56,7 +56,7 @@ export default function FranchisePage() {
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/banquet-table.jpg"
+                src="/images/banquet-table.webp"
                 alt="Elegant banquet table setting in dining hall"
                 loading="lazy"
                 decoding="async"
@@ -99,7 +99,7 @@ export default function FranchisePage() {
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
             <div className="overflow-hidden rounded-3xl border border-border">
               <img
-                src="/images/franchise-hero.jpg"
+                src="/images/franchise-hero.webp"
                 alt="Restaurant interior"
                 loading="lazy"
                 decoding="async"

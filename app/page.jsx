@@ -46,15 +46,19 @@ export default function HomePage() {
             
             {/* Top Image Card */}
             <div className="overflow-hidden rounded-3xl border border-border">
-              <img
-                src="/images/hero-poolside.jpg"
-                alt="Luxury resort pool deck and thatched lodge"
-                width="800"
-                height="600"
-                fetchPriority="high"
-                decoding="async"
-                className="h-48 w-full object-cover sm:h-60 lg:h-56"
-              />
+              <picture>
+                <source media="(max-width: 639px)" srcSet="/images/hero-poolside-mobile.webp" type="image/webp" />
+                <source media="(min-width: 640px)" srcSet="/images/hero-poolside.webp" type="image/webp" />
+                <img
+                  src="/images/hero-poolside.webp"
+                  alt="Luxury resort pool deck and thatched lodge"
+                  width="800"
+                  height="600"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="h-48 w-full object-cover sm:h-60 lg:h-56"
+                />
+              </picture>
             </div>
 
             {/* Bottom 2x2 Stats Surface Card */}
@@ -105,7 +109,7 @@ export default function HomePage() {
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
               <img
-                src="/images/staff-hero.jpg"
+                src="/images/staff-hero.webp"
                 alt="Staffing & Recruitment"
                 className="h-full w-full object-cover"
               />
@@ -133,7 +137,7 @@ export default function HomePage() {
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
               <img
-                src="/images/business-hero.jpg"
+                src="/images/business-hero.webp"
                 alt="Business Consultation"
                 className="h-full w-full object-cover"
               />
@@ -161,7 +165,7 @@ export default function HomePage() {
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
               <img
-                src="/images/franchise-hero.jpg"
+                src="/images/franchise-hero.webp"
                 alt="Franchise Consultation"
                 className="h-full w-full object-cover"
               />
@@ -189,7 +193,7 @@ export default function HomePage() {
           >
             <div className="h-48 w-full overflow-hidden sm:h-64">
               <img
-                src="/images/branding-hero.jpg"
+                src="/images/branding-hero.webp"
                 alt="Marketing & Branding"
                 className="h-full w-full object-cover"
               />
@@ -219,9 +223,11 @@ export default function HomePage() {
           <div className="grid gap-4 lg:grid-cols-2 lg:items-stretch">
             <div className="overflow-hidden rounded-3xl border border-border min-h-[240px] sm:min-h-[300px] lg:min-h-[420px]">
               <img
-                src="/images/case-study-coastal.jpg"
+                src="/images/case-study-coastal.webp"
                 alt="A 240-key resort turnaround in eleven months"
                 className="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -271,9 +277,11 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/why-mody-resort.jpg"
+              src="/images/why-mody-resort.webp"
               alt="Luxury hotel resort exterior"
               className="h-60 w-full object-cover sm:h-96 lg:h-[28rem]"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 
@@ -358,9 +366,11 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-2 lg:items-center">
           <div className="overflow-hidden rounded-3xl border border-border">
             <img
-              src="/images/approach-meeting.jpg"
+              src="/images/approach-meeting.webp"
               alt="Consultants in board meeting"
               className="h-60 w-full object-cover sm:h-96 lg:h-[28rem]"
+              loading="lazy"
+              decoding="async"
             />
           </div>
 

@@ -26,7 +26,7 @@ export default function CaseStudiesPage() {
           {/* Case Study 1 */}
           <article className="surface flex flex-col overflow-hidden">
             <img
-              src="/images/case-study-coastal.jpg"
+              src="/images/case-study-coastal.webp"
               alt="A 240-key resort turnaround in eleven months"
               loading="lazy"
               decoding="async"
@@ -59,7 +59,7 @@ export default function CaseStudiesPage() {
           {/* Case Study 2 */}
           <article className="surface flex flex-col overflow-hidden">
             <img
-              src="/images/case-study-atelier.jpg"
+              src="/images/case-study-atelier.webp"
               alt="Launching a chef-led restaurant to a full book"
               loading="lazy"
               decoding="async"
@@ -92,7 +92,7 @@ export default function CaseStudiesPage() {
           {/* Case Study 3 */}
           <article className="surface flex flex-col overflow-hidden">
             <img
-              src="/images/branding-hero.jpg"
+              src="/images/branding-hero.webp"
               alt="Franchise playbook for a five-city rollout"
               loading="lazy"
               decoding="async"
@@ -125,7 +125,7 @@ export default function CaseStudiesPage() {
           {/* Case Study 4 */}
           <article className="surface flex flex-col overflow-hidden">
             <img
-              src="/images/case-study-heritage.jpg"
+              src="/images/case-study-heritage.webp"
               alt="Repositioning a heritage palace for global travellers"
               loading="lazy"
               decoding="async"
