@@ -149,14 +149,14 @@ const Header = () => {
               </div>
             </div>
 
-            <Link
+            {/* <Link
               href="/case-studies"
               className={`rounded-full px-4 py-2 text-sm transition-colors hover:bg-muted hover:text-foreground ${
                 isNavActive('/case-studies') ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground'
               }`}
             >
               Case Studies
-            </Link>
+            </Link> */}
 
             <Link
               href="/faq"
