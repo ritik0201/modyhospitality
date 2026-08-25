@@ -12,32 +12,32 @@ export default function BrandExcellencePage() {
     <div>
       {/* Section 1: Hero Section */}
       <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-16">
-        <div className="animate-rise grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-          <div>
+        <div className="animate-rise relative flex min-h-[26rem] flex-col justify-center overflow-hidden rounded-3xl border border-border bg-card p-7 sm:p-12 lg:p-16">
+          <img
+            src="/images/branding-hero.webp"
+            alt="Elegant hotel lobby detail"
+            loading="lazy"
+            decoding="async"
+            width="1600"
+            height="1000"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-black/30 dark:from-black/90 dark:via-black/75 dark:to-black/40" />
+
+          <div className="relative z-10 max-w-2xl">
             <span className="eyebrow text-clay">MARKETING &amp; BRANDING</span>
-            <h1 className="mt-4 font-display text-3xl leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="mt-4 font-display text-3xl font-medium leading-tight text-white sm:text-5xl lg:text-6xl">
               Command the rate your property deserves
             </h1>
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-lg">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-slate-200 sm:text-base lg:text-lg">
               Brand strategy and excellence programmes that position your property as a destination, not an option.
             </p>
             <Link
               href="/contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-clay px-5 py-3 text-xs font-medium text-clay-foreground transition-opacity hover:opacity-90 sm:px-6 sm:text-sm"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-clay px-5 py-3 text-xs font-semibold text-clay-foreground transition-opacity hover:opacity-90 sm:px-6 sm:text-sm"
             >
               Start a conversation <ArrowRight className="h-4 w-4" />
             </Link>
-          </div>
-          <div className="overflow-hidden rounded-3xl border border-border">
-            <img
-              src="/images/branding-hero.webp"
-              alt="Elegant hotel lobby detail"
-              loading="lazy"
-              decoding="async"
-              width="1600"
-              height="1000"
-              className="h-56 w-full object-cover sm:h-80 lg:h-[26rem]"
-            />
           </div>
         </div>
       </section>

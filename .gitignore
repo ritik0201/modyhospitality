@@ -130,3 +130,6 @@ dist-ssr/
 
 # Antigravity / Agentic scratch files
 .gemini/
+
+
+/app/case-studies/*
