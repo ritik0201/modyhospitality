@@ -90,7 +90,7 @@ const Header = () => {
             </picture>
             <span className="min-w-0 leading-none">
               <span className="block truncate font-display text-lg font-semibold tracking-tight">Mody</span>
-              <span className="eyebrow mt-1 hidden truncate text-[0.58rem] text-muted-foreground sm:block">
+              <span className="eyebrow mt-0.5 block truncate text-[0.52rem] text-muted-foreground sm:mt-1 sm:text-[0.58rem]">
                 Hospitality Consultants
               </span>
             </span>

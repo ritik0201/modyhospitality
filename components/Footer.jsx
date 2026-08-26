@@ -71,8 +71,8 @@ const Footer = () => {
           <div className="mt-5 space-y-4 text-sm">
             <div>
               <span className="eyebrow block text-[0.58rem] text-muted-foreground/70">Email</span>
-              <a href="mailto:hello@modyconsultants.com" className="break-all text-muted-foreground transition-colors hover:text-clay">
-                hello@modyconsultants.com
+              <a href="mailto:hello@modyhospitality.co.in" className="break-all text-muted-foreground transition-colors hover:text-clay">
+                hello@modyhospitality.co.in
               </a>
             </div>
             <div>

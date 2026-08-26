@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import { ToastProvider } from '../components/ToastContainer';
 
 export const metadata = {
+  metadataBase: new URL('https://modyhospitality.co.in'),
   title: 'Mody Hospitality Consultants | Luxury Hotel & Restaurant Advisory',
   description: 'Premier hospitality consulting firm specializing in luxury hotel management, resort turnarounds, fine-dining concept launch, staff recruitment, and franchise expansion.',
   keywords: ['hospitality consultants', 'hotel consulting', 'restaurant management', 'luxury resort advisory'],

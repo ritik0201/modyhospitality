@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://modyconsultants.com/sitemap.xml
+Sitemap: https://modyhospitality.co.in/sitemap.xml

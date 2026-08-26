@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { useToast } from '../../components/ToastContainer';
 import { Send, Mail, Phone, MapPin } from 'lucide-react';
 
 export default function ContactPage() {
+  const router = useRouter();
   const { showToast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -87,6 +89,7 @@ export default function ContactPage() {
         message: ''
       });
       setErrors({});
+      router.push('/thanku');
     } catch (err) {
       console.error('Failed to submit form:', err);
       showToast('Form submitted successfully! We will contact you soon.', 'success');
@@ -98,6 +101,7 @@ export default function ContactPage() {
         message: ''
       });
       setErrors({});
+      router.push('/thanku');
     } finally {
       setSubmitting(false);
     }
@@ -223,8 +227,8 @@ export default function ContactPage() {
               <ul className="mt-5 space-y-5 text-sm">
                 <li className="flex items-start gap-3">
                   <Mail className="mt-0.5 h-4 w-4 shrink-0 text-clay" />
-                  <a href="mailto:hello@modyconsultants.com" className="break-all text-muted-foreground hover:text-clay">
-                    hello@modyconsultants.com
+                  <a href="mailto:hello@modyhospitality.co.in" className="break-all text-muted-foreground hover:text-clay">
+                    hello@modyhospitality.co.in
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
