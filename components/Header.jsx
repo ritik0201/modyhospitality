@@ -159,12 +159,12 @@ const Header = () => {
             </Link> */}
 
             <Link
-              href="/faq"
+              href="/blogs"
               className={`rounded-full px-4 py-2 text-sm transition-colors hover:bg-muted hover:text-foreground ${
-                isNavActive('/faq') ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground'
+                isNavActive('/blogs') ? 'bg-muted font-medium text-foreground' : 'text-muted-foreground'
               }`}
             >
-              Testimonials &amp; FAQ
+              Blogs
             </Link>
 
             <Link
@@ -247,22 +247,22 @@ const Header = () => {
                 )}
               </div>
 
-              <Link
+              {/* <Link
                 href="/case-studies"
                 className={`block rounded-2xl px-4 py-3 text-base font-medium transition-colors ${
                   isNavActive('/case-studies') ? 'bg-muted text-foreground' : 'text-muted-foreground hover:bg-muted/50'
                 }`}
               >
                 Case Studies
-              </Link>
+              </Link> */}
 
               <Link
-                href="/faq"
+                href="/blogs"
                 className={`block rounded-2xl px-4 py-3 text-base font-medium transition-colors ${
-                  isNavActive('/faq') ? 'bg-muted text-foreground' : 'text-muted-foreground hover:bg-muted/50'
+                  isNavActive('/blogs') ? 'bg-muted text-foreground' : 'text-muted-foreground hover:bg-muted/50'
                 }`}
               >
-                Testimonials &amp; FAQ
+                Blogs
               </Link>
 
               <Link

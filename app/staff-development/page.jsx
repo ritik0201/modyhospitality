@@ -46,13 +46,17 @@ export default function StaffDevelopmentPage() {
       <section className="border-y border-border bg-muted/30 py-12 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-            <div className="text-xs leading-relaxed text-muted-foreground sm:text-base space-y-4">
-              <p>
-                Great hospitality starts with great people. We partner with hoteliers, restaurateurs and resort operators to build teams that deliver consistent, memorable guest experiences — shift after shift, season after season.
-              </p>
-              <p>
-                From sourcing C-suite talent for luxury properties to training front-line service teams in boutique hotels, our approach combines deep industry knowledge with proven HR methodologies that reduce turnover and raise service standards.
-              </p>
+            <div>
+              <span className="eyebrow text-clay">WHO WE ARE</span>
+              <h2 className="mt-2 font-display text-2xl sm:text-4xl text-foreground">Who We Are</h2>
+              <div className="mt-4 text-xs leading-relaxed text-muted-foreground sm:text-base space-y-4">
+                <p>
+                  Great hospitality starts with great people. We partner with hoteliers, restaurateurs and resort operators to build teams that deliver consistent, memorable guest experiences — shift after shift, season after season.
+                </p>
+                <p>
+                  From sourcing C-suite talent for luxury properties to training front-line service teams in boutique hotels, our approach combines deep industry knowledge with proven HR methodologies that reduce turnover and raise service standards.
+                </p>
+              </div>
             </div>
             <div className="overflow-hidden rounded-3xl border border-border">
               <img

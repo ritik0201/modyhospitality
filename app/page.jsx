@@ -218,7 +218,7 @@ export default function HomePage() {
       </section>
 
       {/* 3. Featured Case Study Section */}
-      <section className="border-t border-border bg-muted/30 py-12 sm:py-20">
+      {/* <section className="border-t border-border bg-muted/30 py-12 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="grid gap-4 lg:grid-cols-2 lg:items-stretch">
             <div className="overflow-hidden rounded-3xl border border-border min-h-[240px] sm:min-h-[300px] lg:min-h-[420px]">
@@ -270,7 +270,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 4. Why Mody Consultants Section */}
       <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">
@@ -315,7 +315,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. Client Stories Section */}
-      <section className="border-t border-border bg-muted/30 py-12 sm:py-20">
+      {/* <section className="border-t border-border bg-muted/30 py-12 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <span className="eyebrow text-clay">CLIENT STORIES</span>
           <div className="grid gap-4 mt-6 sm:mt-8 lg:grid-cols-3">
@@ -359,7 +359,7 @@ export default function HomePage() {
             </figure>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* 6. Our Approach Section */}
       <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">
